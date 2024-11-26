@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>pohon kayanya</title>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="controls">
+      <h2>Pythagoras Tree (Fractal)</h2>
+      <div class="slider-container">
+        <label for="scale"
+          >Scale: <span id="scaleValue" class="slider-value">100</span>
+        </label>
+        <input
+          type="range"
+          id="scale"
+          min="50"
+          max="200"
+          value="100"
+          step="1"
+        />
+      </div>
+      <div class="slider-container">
+        <label for="trunkWidth"
+          >Trunk Width:
+          <span id="trunkWidthValue" class="slider-value">10</span>
+        </label>
+        <input
+          type="range"
+          id="trunkWidth"
+          min="1"
+          max="30"
+          value="10"
+          step="1"
+        />
+      </div>
+      <div class="slider-container">
+        <label for="depth"
+          >Recursion Depth: <span id="depthValue" class="slider-value">10</span>
+        </label>
+        <input type="range" id="depth" min="1" max="13" value="10" step="1" />
+      </div>
+      <div class="slider-container">
+        <label for="angle"
+          >Angle: <span id="angleValue" class="slider-value">30</span>
+        </label>
+        <input type="range" id="angle" min="0" max="90" value="30" step="1" />
+      </div>
+      <button id="randomize">Randomize Colors</button>
+      <button id="cycleColor">Stop Cycle</button>
+    </div>
+    <div id="canvas-container">
+      <canvas id="canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
